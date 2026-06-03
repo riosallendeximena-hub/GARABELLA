@@ -1,0 +1,81 @@
+/* Fondo general */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff; /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor */
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* Tabla */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #a9d6f5; /* Azul pastel */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: aparecer 1s ease;
+}
+
+/* Celdas */
+td{
+    border: 2px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+/* Título */
+.titulo{
+    height: 120px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0a3d62;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.7);
+    transition: all 0.3s ease;
+}
+
+.titulo:hover{
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.02);
+}
+
+/* Espacios vacíos */
+.espacio{
+    height: 250px;
+    transition: background 0.4s;
+}
+
+.espacio:hover{
+    background: rgba(255,255,255,0.15);
+}
+
+/* Animación */
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.video{
+    height: 350px;
+    padding: 20px;
+}
+
+.video video{
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
